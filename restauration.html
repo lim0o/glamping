@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="restauration.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo-removebg-preview.png" alt="Logo">
+
+            <ul class="menu-navbar">
+                <li class="menu-item"><a href="/index.html" class="navbar-lien">Acceuil</a></li>
+                <li class="menu-item"><a href="/reservation.html" class="navbar-lien">Réservation</a></li>
+                <li class="menu-item"><a href="/restauration.html" class="navbar-lien">Se restaurer</a></li>
+                <li class="menu-item"><a href="/proximite.html" class="navbar-lien">À proximité</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <nav class="menu-burger">
+            <div class="menu-burger-infos">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-2 h-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </span>
+                <ul>
+                    <li class="menu-item"><a href="/index.html" class="burger-lien">Acceuil</a></li>
+                    <li class="menu-item"><a href="/reservation.html" class="burger-lien">Réservation</a></li>
+                    <li class="menu-item"><a href="/restauration.html" class="burger-lien">Se restaurer</a></li>
+                    <li class="menu-item"><a href="/proximite.html" class="burger-lien">À proximité</a></li>
+                </ul>
+
+                <div class="contact-burger premier">
+                    <p>Numéro de téléphone : <a href="tel:0143958438">0143958438</a></p>
+                </div>
+                <div class="contact-burger">
+                    <p>Adresse Mail : <a href="mailto:leboisdescharmes@gmail.com">leboisdescharmes@gmail.com</a></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-carte">
+        <div class="menu-column">
+            <h2>Panier repas</h2>
+            <!-- Repeat this block for each item -->
+            <div class="menu-item-carte">
+                <h3>Entrées</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Soupe de potimarron rôti au miel d'acacia et thym</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Rillettes traditionnelles</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Plat</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Saumon au citron confit, riz de Camargue IGP</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Volaille yakitori, patates douces</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Fromage</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Crottin de chavignol et l'Olivet - Ferme de la Cabinette</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Dessert</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Crumble et sa compotée aux fruits de saison</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Fondant de poire, chocolat "Bahibé Valrhona"</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Accompagnements</h3>
+                <div class="choix">
+                    <span class="menu-item-name">2 bouteilles d'eau de 50cl, une baguette tradition</span>
+                    <span class="menu-item-price">Offert</span>
+                </div>
+            </div>
+            <!-- ... other items ... -->
+        </div>
+
+        <div class="menu-column">
+            <h2>Offre végétarienne</h2>
+            <!-- Repeat this block for each item -->
+            <div class="menu-item-carte">
+                <h3>Entrées</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Houmous à l'huile de sésame</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Caviar d'aubergine</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Plat</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Gnocchi, crème d'épinards</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Risotto aux champignons de saison</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Fromage</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Crottin de chavignol et l'Olivet - Ferme de la Cabinette</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Dessert</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Crumble et sa compotée aux fruits de saison</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Fondant de poire, chocolat "Bahibé Valrhona"</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Accompagnements</h3>
+                <div class="choix">
+                    <span class="menu-item-name">2 bouteilles d'eau de 50cl, une baguette tradition</span>
+                    <span class="menu-item-price">Offert</span>
+                </div>
+            </div>
+            <!-- ... other items ... -->
+        </div>
+
+        <div class="menu-column">
+            <h2>Panier repas à emporter</h2>
+            <!-- Repeat this block for each item -->
+            <div class="menu-item-carte">
+                <h3>Entrées</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Caviar d'aubergines</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Rillettes traditionnelles</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Plat</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Salade composée</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Sandwich / Chips</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Fromage</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Crottin de chavignol et l'Olivet - Ferme de la Cabinette</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Dessert</h3>
+                <div class="choix">
+                    <span class="menu-item-name">Panna Cotta aux fruits de saison</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+                <div class="choix">
+                    <span class="menu-item-name">Crème vanille, amandes torréfiées</span>
+                    <span class="menu-item-price">€</span>
+                </div>
+            </div>
+            <div class="menu-item-carte">
+                <h3>Accompagnements</h3>
+                <div class="choix">
+                    <span class="menu-item-name">2 bouteilles d'eau de 50cl, une baguette tradition</span>
+                    <span class="menu-item-price">Offert</span>
+                </div>
+            </div>
+            <!-- ... other items ... -->
+        </div>
+    </div>
+</body>
+
+<script src="restauration.js"></script>
+</html>

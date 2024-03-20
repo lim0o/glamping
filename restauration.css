@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wdth,wght@1,8..144,50..150,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rochester&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #D2C19F;
+}
+
+ul, li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav img {
+    height: 100px;
+}
+
+.menu-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 30px;
+    color: #D2C19F;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 100;
+    transition: color 0.2s ease;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.1s ease;
+    background: #D2C19F;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.menu-carte {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    margin-right: 20px;
+}
+
+.menu-item-carte {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu-column h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 24pt;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 24pt;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h3::after {
+    content: '';
+    width: 10%;
+    height: 2px;
+    background-color: #D2C19F;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+} 
+
+h2::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: #D2C19F;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+} 
+
+.choix {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.choix .menu-item-name {
+    color: #7d878f;
+    font-family: 'Montserrat';
+    font-size: 10pt;
+    position: relative;
+}
+
+.menu-item-price {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 10pt;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.menu-item-name::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    width: 5px;
+    height: 1px;
+    background: black;
+}
+
+@media only screen and (max-width: 450px) {
+    .menu-column {
+        width: 300px;
+        margin-right: 0;
+    }
+}
+
+
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #f9fbfc;
+    z-index: 10000;
+}
+
+.menu-burger-infos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-burger .menu-item {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.menu-burger .burger-lien {
+    color: black;
+}
+
+.menu-burger span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+}
+
+.menu-burger .contact-burger {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #D2C19F;
+    padding: 10px;
+}
+
+.menu-burger .premier {
+    margin-top: 40px;
+}
+
+.menu-burger .contact-burger p {
+    color: #f9fbfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-burger .contact-burger a {
+    color: #7d878f;
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.burger span {
+    width: 20px;
+    height: 1px;
+    margin-bottom: 5px;
+    background-color: #D2C19F;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.menu-burger span:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 730px) {
+    .burger {
+        display: flex;
+    }
+    .menu-navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .menu-burger .contact-burger p {
+        font-size: 10pt;
+    }
+}
