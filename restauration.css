@@ -96,7 +96,7 @@ nav img {
 
 .menu-column h2 {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 24pt;
+    font-size: 22pt;
     position: relative;
     margin-bottom: 40px;
 }
@@ -146,8 +146,7 @@ h2::after {
 .menu-item-price {
     color: black;
     font-family: 'Montserrat';
-    font-size: 10pt;
-    font-weight: bolder;
+    font-size: 12pt;
     margin-left: 10px;
 }
 

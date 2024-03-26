@@ -561,13 +561,13 @@ nav img {
     position: relative;
     box-sizing: border-box;
     height: 100%;
-    width: 60%;
+    width: 50%;
     float: left;
-    transform: skew(-20deg);
+    /*transform: skew(-20deg);*/
 }
 
 .contact .inner .panel.panel-left {
-    margin-left: -10%;
+    margin-left: 0%;
 }
 
 .contact .inner .panel .panel-content {
@@ -576,59 +576,27 @@ nav img {
     height: 100%;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%) skew(20deg);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .contact .inner .panel.panel-left .panel-content .image-background {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 60%;
-    opacity: 0.95;
-    transform: translateX(-50%) translateY(-50%);
+    background-image: url(images/photo-equipe.png);
+    background-size: cover;
 }
 
-.contact .inner .panel.panel-left .panel-content .image-background img {
+/*.contact .inner .panel.panel-left .panel-content .image-background img {
     position: absolute;
     top: 43%;
     left: 8.5%;
     width: 475px;
-    transform: rotate(-20deg);
-}
-
-@media only screen and (max-width: 1100px) {
-    .contact .inner .panel.panel-left .panel-content .image-background img {
-        width: 400px;
-        top: 50%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .contact .inner .panel.panel-left .panel-content .image-background img {
-        width: 375px;
-        left: 6%;
-    }
-}
+}*/
 
 @media only screen and (max-width: 800px) {
-    .contact .inner .panel.panel-left .panel-content .image-background img {
-        width: 350px;
-        top: 56%;
-        left: 2%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .contact .inner .panel.panel-left .panel-content .image-background img {
+    .panel-left {
         display: none;
-    }
-
-    .panel.panel-left {
-        display: none;
-    }
-
-    .panel.panel-right {
-        width: 100%;
     }
 
     .contact .inner .panel {
@@ -636,15 +604,6 @@ nav img {
     }
 }
 
-@media only screen and (max-width: 440px) {
-    .contact .inner .panel .panel-content {
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .contact .inner .panel {
-        transform: skew(0deg);
-    }
-}
 
 
 .contact .inner .panel.panel-right {
@@ -699,7 +658,7 @@ input:focus {
 
 label {
     color: #f9fbfc;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
